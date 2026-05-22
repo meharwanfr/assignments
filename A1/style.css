@@ -187,6 +187,8 @@ nav .light-mode {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
 }
 
 .card .top-info {
@@ -298,16 +300,105 @@ nav .light-mode {
 }
 
 .gray-bottom {
-        border-bottom: 6px solid #4C6AB2;
+    border-bottom: 6px solid #4C6AB2;
 }
 
 .info-section {
-    width: 100vw;
-    min-height: 10vh;
-    /* background-color: lightgreen; */
+    width: 80vw;
+    min-height: 10rem;
+    border-radius: 30px;
+    background-color: rgb(255, 249, 249);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: .51rem 4rem;
+}
+
+.info-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    position: relative;
+    /* background-color: black; */
+}
+
+.info-item .info-img {
+    /* scale: 1.5; */
+    background-color: rgba(135, 206, 250, 0.505);
+    border-radius: 50%;
+    /* border: 2px solid; */
+    overflow: hidden;
+    padding: .2rem;
+}
+
+.info-item .info-img img {
+    width: calc(var(--icon-size) + 25px);
+    height: calc(var(--icon-size) + 25px);
+}
+
+.info-item .info-text {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-item .info-text h3 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.info-item .info-text h5 {
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+    opacity: 0.6;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.info-item .green-bg {
+    background-color: rgba(152, 212, 152, 0.529);
+}
+
+.info-item .yellow-bg {
+    background-color: rgba(251, 224, 101, 0.871);
+}
+
+.info-item .yellow-bg img {
+    scale: 0.6;
+}
+
+.info-item .purple-bg {
+    background-color: rgba(200, 128, 200, 0.676);
+}
+
+.info-item .purple-bg img {
+    scale: 0.6;
 }
 
 footer {
     width: 100vw;
+    height: 7rem;
+    margin: 1rem 0;
     /* background-color: lightpink; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+footer .pokebal-icon img {
+    width: 50px;
+    opacity: 0.5;
+} 
+
+footer h3 {
+    opacity: 0.6;
 }
