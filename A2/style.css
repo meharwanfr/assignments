@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    /* min-height: 100vh; */
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    padding: 2rem 3.5rem;
+}
+
+nav {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-left {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-left img {
+    width: 100px;
+    height: 80px;
+}
+
+nav .nav-left h2 {
+    font-size: 1.8rem;
+}
+
+nav .nav-center {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav .nav-center a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+nav .nav-right button {
+    padding: 1rem;
+    border: none;
+    background-color: #121212;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+main .title {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 3rem; */
+}
+
+main .title h1 {
+    font-size: 9rem;
+}
+
+
+main .options-section {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightsalmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .options-section button {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: #121212;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+main .options-section button:first-child {
+    background-color: #FC480A;
+}
+
+.card-container {
+    /* background-color: lightcyan; */
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: center; */
+    gap: 2rem;
+}
+
+.card-container .card {
+    border-radius: 30px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 60%;
+    background-color: lightgoldenrodyellow;
+    border-radius: 30px;
+    background-image: url("./assets/glass-red.avif");
+    background-position: center;
+    background-size: cover;
+}
+
+.card-bottom {
+    width: 100%;
+    height: 40%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-tag {
+    background-color: #521C0A;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.card-tag h4 {
+    font-size: 1.3rem;
+    color: #E6936E;
+}
+
+.card-bottom h2 {
+    font-size: 2rem;
+}
+
+.card-bottom h5 {
+    opacity: 0.5;
+}
+
+.card .chair {
+    background-image: url("./assets/chair.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card .cat {
+    background-image: url("./assets/cat.png");
+    background-position: center;
+    background-size: cover;
+}
