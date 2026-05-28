@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="w-screen h-full font-sans overflow-x-hidden">
+        <nav class="w-screen h-24 flex items-center justify-between p-4 px-10">
+            <div class="nav-left flex items-center gap-10 font-bold text-sm">
+                <div class="logo h-full w-24">
+                    <img class="w-full h-full" src="./assets/Dribbble-Logo.webp" alt="">
+                </div>
+
+                <div class="nav-left-items flex items-center gap-1">
+                    <h3>Explore</h3>
+                    <img src="./assets/arrow-down-s-line.png" alt="">
+                </div>
+                <div class="nav-left-items flex items-center gap-1">
+                    <h3>Hire a Designer</h3>
+                    <img src="./assets/arrow-down-s-line.png" alt="">
+                </div>
+                <div class="nav-left-items">Finds Jobs</div>
+                <div class="nav-left-items">Blog</div>
+            </div>
+
+            <div class="nav-right flex items-center gap-4 font-bold">
+                <button>Sing up</button>
+                <button class="bg-black rounded-4xl py-3 px-4 text-md text-white">Log in</button>
+            </div>
+        </nav>
+
+        <div class="home-section w-screen h-[60vh] flex flex-col items-center ">
+            <h1 class="text-7xl font-[Times] text-center mt-10 leading-20">Discover the world's <br> top designers</h1>
+            <h3 class="text-center mt-7">Explore work from the most talented and accomplished designers <br>
+                ready to take on your next project</h3>
+
+            <div
+                class="search-bar w-1/2 h-14 mt-8 rounded-4xl bg-[#F4F4F4] p-2 px-5 flex items-center justify-between  ">
+                <input
+                    class="w-1/2 h-[90%] text-sm outline-none border-none active:outline-none active:border-none focus:outline-none "
+                    type="text" name="serach" placeholder="What are you looking for?" id="">
+                <div class="left-serach-div flex items-center gap-2 ">
+                    <div class="shots-div flex items-center">
+                        <h3 class="font-semibold">Shots</h3>
+                        <img class="w-5 h-5" src="./assets/arrow-down-s-line.png" alt="">
+                    </div>
+
+                    <div class="search-box p-2 w-8 h-8 rounded-4xl bg-pink-500 flex items-center justify-center">
+                        <img class="opacity-80" src="./assets/search-line.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-div w-1/2 h-14 py-2 mt-3 flex items-center gap-3">
+                <h2 class="text-sm text-gray-400">Trending Searches</h2>
+                <div
+                    class="treanding-items text-xs p-1 px-2 bg-[#F4F4F4] rounded-4xl flex items-center justify-center ">
+                    landing page
+                </div>
+                <div
+                    class="treanding-items text-xs p-1 px-2 bg-[#F4F4F4] rounded-4xl flex items-center justify-center ">
+                    e-commerce
+
+                </div>
+                <div
+                    class="treanding-items text-xs p-1 px-2 bg-[#F4F4F4] rounded-4xl flex items-center justify-center ">
+                    mobile app
+
+                </div>
+                <div
+                    class="treanding-items text-xs p-1 px-2 bg-[#F4F4F4] rounded-4xl flex items-center justify-center ">
+                    logo design
+
+                </div>
+                <div
+                    class="treanding-items text-xs p-1 px-2 bg-[#F4F4F4] rounded-4xl flex items-center justify-center ">
+                    dashboard
+                </div>
+                <div
+                    class="treanding-items text-xs p-1 px-2 bg-[#F4F4F4] rounded-4xl flex items-center justify-center ">
+                    icons
+                </div>
+            </div>
+        </div>
+
+        <div class="card-section w-screen h-fit overflow-hidden px-6">
+            <div class="card-section-bar w-full h-10 flex items-center justify-between">
+                <div
+                    class="card-filter h-fit w-fit p-1 px-2 rounded-lg flex items-center gap-2 border border-gray-300 ">
+                    <h2 class="text-sm">Popular</h2>
+                    <img class="w-4 h-4" src="./assets/arrow-down-s-line.png" alt="">
+                </div>
+                <div class="trending-div flex items-center gap-3 font-bold capitalize">
+                    <div
+                        class="treanding-items text-xs p-1 px-2 bg-[#F4F4F4] rounded-4xl flex items-center justify-center ">
+                        Discover
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        animation
+
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        branding
+
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        illustration
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        mobile
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        print
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        product design
+
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        typography
+                    </div>
+                    <div class="treanding-items text-xs p-1 px-2 rounded-4xl flex items-center justify-center ">
+                        web design
+                    </div>
+                </div>
+                <div
+                    class="card-filter h-fit w-fit p-1 px-3 rounded-3xl flex items-center gap-2 border border-gray-300 ">
+                    <img class="w-4 h-4" src="./assets/filter-3-line.png" alt="">
+                    <h2 class="text-sm">Filter</h2>
+                </div>
+            </div>
+
+            <div class="card-grid w-full h-[110vh] mt-4 grid grid-rows-3 grid-cols-4 gap-3 ">
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/1.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/1.webp" alt="">
+                            <h2 class="text-sm">Upnow Studio</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item rounded-2xl overflow-hidden">
+                    <div class="vid-wrapper rounded-2xl w-full aspect-video h-3/4 overflow-hidden">
+                        <video loop muted autoplay src="./assets/cards/2.mp4"></video>
+                    </div>
+
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/2.webp" alt="">
+                            <h2 class="text-sm">Fancy</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                TEAM
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/3.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/3.webp" alt="">
+                            <h2 class="text-sm">Extej UI UX Design..</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/4.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/4.webp" alt="">
+                            <h2 class="text-sm">Emote</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/5.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/5.webp" alt="">
+                            <h2 class="text-sm">Victa Vile</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/6.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/6.webp" alt="">
+                            <h2 class="text-sm">Bonsai</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/7.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/7.webp" alt="">
+                            <h2 class="text-sm">Type08</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/8.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/8.webp" alt="">
+                            <h2 class="text-sm">Ronus IT</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/9.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/9.webp" alt="">
+                            <h2 class="text-sm">Bato</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/10.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/10.webp" alt="">
+                            <h2 class="text-sm">Jovel Ahmed</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/11.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/11.webp" alt="">
+                            <h2 class="text-sm">Levi Lowell</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item p-1 ">
+                    <img class="rounded-2xl w-full aspect-video h-3/4" src="./assets/cards/12.webp" alt="">
+                    <div class="item-desc w-full p-1 flex items-center justify-between">
+                        <div class="items-left flex items-center gap-1">
+                            <img class="w-6 h-6 rounded-4xl" src="./assets/card-logos/12.webp" alt="">
+                            <h2 class="text-sm">Ulysses Design Co.</h2>
+                            <div class="pro bg-gray-400 px-1 text-xs text-white">
+                                PRO
+                            </div>
+                        </div>
+                        <div class="items-right flex items-center gap-2">
+                            <div class="likes flex items-center gap-1">
+                                <img class="w-4 h-4" src="./assets/heart-fill-gray.png" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                            <div class="views flex items-center">
+                                <img class="w-4 h-4" src="./assets/eye-fill.svg" alt="">
+                                <h4 class="text-xs">31</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="signup-bar w-screen my-16 px-5 flex items-center justify-between h-10">
+            <div class="empty"></div>
+            <button class="bg-black p-1 px-3 font-semibold text-sm rounded-2xl text-white">Sign up to continue</button>
+            <div class="w-9 h-9 p-2 bg-gray-400 rounded-4xl flex items-center justify-center">
+                <img class="w-full h-full " src="./assets/arrow-up-line.svg" alt="">
+            </div>
+        </div>
+
+        <div class="moving-elems h-32 px-6  ">
+            <div class="logos h-full  flex items-center gap-20">
+                <img class="h-full aspect-square  " src="./assets/logos/logo 1.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 2.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 3.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 4.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 5.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 1.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 2.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 3.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 4.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 5.svg" alt="">
+           <img class="h-full aspect-square  " src="./assets/logos/logo 1.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 2.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 3.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 4.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 5.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 1.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 2.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 3.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 4.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 5.svg" alt="">
+            </div>
+            <!-- <div class="elems h-full  flex items-center gap-10 bg-black"> -->
+            <!-- </div> -->
+
+              <!-- <div class="elems h-full flex items-center gap-10"> -->
+            <!-- </div> -->
+<!-- 
+              <div class="elems h-full flex items-center gap-10">
+                <img class="h-full aspect-square " src="./assets/logos/logo 1.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 2.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 3.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 4.svg" alt="">
+                <img class="h-full aspect-square " src="./assets/logos/logo 5.svg" alt="">
+            </div> -->
+        </div>
+
+
+        <footer class="px-30 my-8 mt-12">
+            <div class="footer-above h-20 w-full flex items-center justify-between p-2">
+                 <div class="logo h-full ">
+                    <img class="w-full h-full" src="./assets/Dribbble-Logo.webp" alt="">
+                </div>
+
+                <div class="mid-part flex items-center gap-8 text-sm font-medium">
+                    <h2>For designers</h2>
+                    <h2>Hire talent</h2>
+                    <h2>Inspiration</h2>
+                    <h2>Advertising</h2>
+                    <h2>Blog</h2>
+                    <h2>About</h2>
+                    <h2>Careers</h2>
+                    <h2>Support</h2>
+                </div>
+
+                <div class="contacts w-fit flex items-center gap-1">
+                    <img class="w-5" src="./assets/twitter-fill.svg" alt="">
+                    <img class="w-5" src="./assets/facebook-box-fill.svg" alt="">
+                    <img class="w-5" src="./assets/instagram-line.svg" alt="">
+                    <img class="w-5" src="./assets/pinterest-fill.svg" alt="">
+                </div>
+            </div>
+
+            <div class="footer-btm flex items-center justify-between">
+                <div class="left flex items-center gap-2 text-xs opacity-50">
+                    <h2>©2025 Dribble</h2>
+                    <h2>Terms</h2>
+                    <h2>Privacy</h2>
+                    <h2>Cookies</h2>
+                </div>
+                <div class="right flex items-center gap-2 text-xs opacity-50">
+                    <h2>Jobs</h2>
+                    <h2>Designers</h2>
+                    <h2>Freelancers</h2>
+                    <h2>Tags</h2>
+                    <h2>Places</h2>
+                    <h2>Resources</h2>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
